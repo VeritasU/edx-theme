@@ -1,0 +1,54 @@
+## mako
+<%! from django.core.urlresolvers import reverse %>
+<%namespace name='static' file='/static_content.html'/>
+
+<div id="landing-page-content">
+    <div class="container">
+        <div class="col-md-12 landing-page-header">
+            <span>
+                <img src="${static.url('themes/veritasu/images/Veritas_U_Logo_Shield.png')}" class="header-logo-img">
+                <a href="/">
+                    <img src="${static.url('themes/veritasu/images/Veritas_U_Logo_Text.png')}" class="header-logo-text">
+                </a>
+            </span>
+            <a href="/login" class="btn btn-success pull-right">Login</a>
+        </div>
+        <div class="col-md-6 col-md-offset-3 landing-middle-content">
+            <div class="col-md-12 text-center landing-button-div">
+                <span>
+                    I'm an:
+                </span>
+                <button class="btn btn-default active" id="educator-button" onclick="showEducatorPanel()">Educator</button>
+                <button class="btn btn-default" id="student-button" onclick="showStudentPanel()">Student</button>
+            </div>
+            <div class="col-md-12">
+                <div class="panel panel-default" id="educator-landing-panel">
+                    <div class="panel-body text-center">
+                        <h3>Need to deliver an online course?</h3>
+                        <p>
+                            We can help. VeritasU serves educators with managed hosting, course development and technology support for online courses and MOOCs.
+                        </p>
+                    </div>
+                </div>
+                <div class="panel panel-default" id="student-landing-panel">
+                    <div class="panel-body text-center">
+                        <h3>VeritasU hosts great online courses</h3>
+                        <p>
+                            Working with educators, we provide great courses for you to take
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 text-center">
+                <a href="/signup" class="btn btn-warning btn-lg col-md-6 col-md-offset-3">Sign Up</a>
+            </div>
+            <div class="col-md-12 text-center">
+                <h4><a href="/courses">See our courses</a></h4>
+            </div>
+            <div class="col-md-12 text-center">
+                <h4>Already registered?</h4>
+                <a href="/login" class="btn btn-success btn-lg col-md-6 col-md-offset-3">Login</a>
+            </div>
+        </div>
+    </div>
+</div>

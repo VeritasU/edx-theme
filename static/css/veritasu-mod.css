@@ -1,11 +1,131 @@
-.home>header .media {
-height: 132px;
-background: white;
-
+/* Button tweaks, to override edX's override! */
+.container {
+    font-family: 'Open Sans', sans-serif !important;
 }
 
-.home>header .title {
-background: white;
-
+h1, h2, h3, h4, h5 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700 !important;
 }
 
+.btn-warning {
+    background-color: #FF9900;
+    color: #FFFFFF;
+    text-shadow: none;
+    background-image: none !important;
+    box-shadow: none;
+}
+
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning.active {
+  color: #fff;
+  background-color: #ed9c28 !important;
+  border-color: #d58512 !important;
+}
+
+/* Content Wrapper overrides */
+
+.content-wrapper {
+    padding-bottom: 0px;
+}
+
+/* Landing Page */
+#landing-page-content {
+    height: 100%;
+    padding-top: 50px;
+    background-size: cover;
+    background-image: url('../images/background-landing-image.jpg');
+}
+
+.landing-page-header {
+    margin-bottom: 50px;
+}
+
+.landing-middle-content {
+    margin-top: 20px;
+}
+
+#student-landing-panel {
+    /* student landing panel is hidden on page load */
+    display: none;
+}
+
+#educator-button,
+#student-button {
+    box-shadow: none !important;
+}
+
+#educator-button.active,
+#student-button.active {
+    color: #fff;
+    background-color: #428bca;
+    border-color: #357ebd;
+}
+
+.landing-button-div {
+    margin-bottom: 20px;
+}
+
+/* Features Page */
+
+.feature-row {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.sign-up-row {
+    padding-top: 40px;
+}
+
+/* The Header */
+
+#header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #FFFFFF;
+    position: relative;
+    display: block;
+    border-bottom: solid 1px #C3C1C1;
+}
+
+#header .btn-link {
+    color: #000410;
+    margin-left: 20px;
+}
+#header .btn-link:hover{
+    color: #9B2D1F;
+    text-decoration: none;
+    box-shadow: 0px 4px 0px #9B2D1F;
+}
+#header .container {
+    height: 100%;
+}
+.header-logo-img {
+    height: 50px;
+}
+.header-logo-text {
+    height: 20px;
+}
+
+/* The Footer */
+
+#footer {
+    background-color: #C3C1C1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: solid 1px #696464;
+    color: #000410;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul a {
+    color: #000410;;
+}

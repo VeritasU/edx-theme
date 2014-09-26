@@ -7,16 +7,35 @@ codebase so that it's easy to tell where the files will end up upon
 deploy. We'll use a special settings file to set the template and
 staticfiles paths properly to point to these files.
 
-![Alt text](/default_theme_screenshot.jpg?raw=true "Open edX Default Theme Screenshot")
+Installation
+=======
+First, make sure to clone this directory into the `/themes` directory of your edx stack. Rename the directory `/themes/veritasu` if you haven't already
 
-Theme Authoring
-===============
-To customize your theme:
-- Fork this repository.
-- Clone it into the theme directory next to your edx-platform directory and rename the theme directory to your new theme's name.
-- Upload your own image assets.
-- Edit the .scss file in static/sass/ and rename the file with your theme's name.
-- Edit the lms.envs.json file in edx-platform and set 'USE_CUSTOM_THEME' to true, and 'THEME_NAME' to your theme's name.
+Second, you'll want to edit the `urls.py` located in `/edx-platform/lms` to include references to our custom pages (for example, 'features' and 'signup')
+
+```
+######################### MARKETING SITE ###############################
+...
+MKTG_URL_LINK_MAP = {
+    'ABOUT': 'about_edx',
+    'CONTACT': 'contact',
+    'FAQ': 'help_edx',
+    'COURSES': 'courses',
+    'ROOT': 'root',
+    'TOS': 'tos',
+    'HONOR': 'honor',
+    'PRIVACY': 'privacy_edx',
+    'JOBS': 'jobs',
+    'NEWS': 'news',
+    'PRESS': 'press',
+    'BLOG': 'edx-blog',
+    'DONATE': 'donate',
+    'FEATURES' : 'features',
+    'SIGNUP' : 'signup',
+...
+```
+
+Finally, on the devstack, once you have your vagant instance up and running, you'll want to edit `/lms.envs.json` according to the instructions here: https://github.com/Stanford-Online/edx-theme
 
 
 License

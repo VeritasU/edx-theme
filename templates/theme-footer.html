@@ -4,23 +4,54 @@
 <%! from datetime import datetime %>
 <%! from pytz import UTC %>
 
-<div class="wrapper-footer">
-  <footer>
-    <div class="colophon">
-      <nav class="nav-colophon">
-        <ol>
-          <li><a href="${reverse('tos')}">Terms of Service</a></li>
-          <li><a href="${reverse('tos')}#privacy">Privacy Policy</a></li>
-          <li><a href="${reverse('tos')}#honor">Honor Code</a></li>
-          <li><a href="${reverse('tos')}#copyright">Copyright</a></li>
-          <li><a href="${reverse('about_edx')}#careers">Careers</a></li>
-          <li><a href="${reverse('about_edx')}#contact">Contact</a></li>
-          <li><a href="${marketing_link('FAQ')}">Help</a></li>
-        </ol>
-      </nav>
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 footer-links">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/courses">Courses</a></li>
+                    <li><a href="/features">Features</a></li>
+                    <li><a  href="/about">About</a></li>
+                    <li><a  href="/tos">Terms of Service</a></li>
+                    <li><a  href="/privacy">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 footer-links">
+                <ul>
+                    <li><a  href="/blog">Blog</a></li>
+                    <li><a  href="/news">News</a></li>
+                    <li><a  href="/careers">Careers</a></li>
+                    <li><a  href="/faq">FAQ</a></li>
+                    <li><a  href="/contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <p>Sign up for our newsletter</p>
+                <form class="form-horizontal">
+                    <div class="form-group col-md-12">
+                        <input type="text" class="form-control" placeholder="Email Address">
+                        
+                    </div>
+                    <div class="form-group col-md-12 text-center">
+                        <button type="submit" class="btn btn-warning">
+                            Sign Up
+                        </button>
+                    </div>
+                </form>
+        <p>Follow Us </p>
+        <div class="widget_bw_social_widget">
+        <ul class="list-inline social-btn">
+            <li><a href="/"><i class="ion-social-facebook"></i></a></li>
+            <li><a href="/"><i class="ion-social-twitter"></i></a></li>
+            <li><a href="/"><i class="ion-social-googleplus"></i></a></li>
+        </ul></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                &copy; 2014 VeritasU
+            </div>
+        </div>
     </div>
-    <div class="references">
-      <span>Built on <a href="http://code.edx.org">OpenEdX</a>.</span>
-    </div>
-  </footer>
 </div>

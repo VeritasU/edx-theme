@@ -1,0 +1,43 @@
+## mako
+<%! from django.core.urlresolvers import reverse %>
+<%inherit file="../main.html" />
+<%namespace name='static' file='/static_content.html'/>
+
+<div class="container">
+    <div class="row feature-row" id="veritasU">
+        <div class="col-md-6">
+            <p> 
+                HELLO WORLD
+            </p>
+            <ul>
+                <li>You focus on teaching</li>
+                <li>We take care of all that grungy IT and tech stuff.</li>
+            </ul>
+            <p>VeritasU is proud to use OpenEdX, the leading open source learning platform.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="//www.youtube.com/embed/8k54r_ANt8o"></iframe>
+            </div>
+        </div>
+        <div class="col-md-12 text-center sign-up-row">
+            <a href="/signup" class="btn btn-warning btn-lg">Sign Up</a>
+        </div>
+    </div>
+    <div class="row feature-row" id="openEdx">
+        <div class="col-md-6">
+            <h2>About OpenEdX</h2>
+            <p>Open-EdX is an open-source learning platform. OpenEdX is the technology behind EdX, the higher-ed consortium formed by MIT and Harvard (with Google, Stanford and other institutions on board), developed for serving MOOCs, massive open online courses. The open-source Open-EdX technology to fulfill their mission to make quality courses available to the world. We are proud to work with openEdX to make that mission a reality - working with our partner educators to create and deliver great courses.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="//www.youtube.com/embed/8k54r_ANt8o"></iframe>
+            </div>
+        </div>
+        <div class="col-md-12 text-center sign-up-row">
+            <a href="/signup" class="btn btn-warning btn-lg">Sign Up</a>
+        </div>
+    </div>
+</div>
