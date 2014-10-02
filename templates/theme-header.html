@@ -26,9 +26,15 @@
                     <li><a href="/contact">Contact</a></li>
                 </ul>
             </div>
-            <a class="btn btn-link" href="http://blog.veritasu.com">Blog</a>
-            <a href="/register" class="btn btn-default login-btn">Sign Up</a>
-            <a href="/login" class="btn btn-success login-btn">Login</a>
+	    %if not user.is_authenticated():
+                <a class="btn btn-link" href="http://blog.veritasu.com">Blog</a>
+                <a href="/register" class="btn btn-default login-btn">Sign Up</a>
+                <a href="/login" class="btn btn-success login-btn">Login</a>
+	    %else:
+                <a class="btn btn-link" href="http://blog.veritasu.com">Blog</a>
+	        <a href="${reverse('logout')}" class="btn btn-success login-btn">Logout</a>
+	   %endif
+	   
         </div>
     </div>
 </header>
