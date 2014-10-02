@@ -1,0 +1,37 @@
+## mako
+<%! from django.core.urlresolvers import reverse %>
+<%! from django.utils.translation import ugettext as _ %>
+
+<%inherit file="../main.html" />
+<%namespace name='static' file='/static_content.html'/>
+
+<%block name="pagetitle">${_("Jobs")}</%block>
+
+<div class="container">
+    <div class="col-md-10 col-md-offset-1"> 
+        <h1>VERITASU IS HIRING!</h1>
+   
+        <p>
+            At veritasU, we are technology experts committed to improving education. We are a startup, offering an opportunity for ground-floor equity participation in our compensation. We are a small, global, distributed team led out of Austin, TX. If you are pro-active, collaborative, passionate, an action-oriented team player, and able and willing to go the extra mile for our users, join our team. <em>All positions are offered as either full-time, contract and/or part-time opportunities.</em>
+        </p>
+        <h2>Jobs We are Hiring For:</h2>
+        <ul>
+            <li><strong>Software Engineer / Developer</strong> (Austin / remote) - Python/Django, Javascript, open source</li>
+            <li><strong>Front-End Developer/Designer</strong> (Austin / remote) - Python/Django, Javascript, UI/UX   </li>
+            <li><strong>DevOps/Systems Engineer</strong> (Austin / remote) – Systems configuration, Python/ Django, Ansible, scripting, cloud infrastructure </li>
+            <li><strong>Sales Associate / Account Manager</strong> (Austin / remote / travel) – sales, negotiation, communication, coordination, technical customer support</li>  
+        </ul>
+   
+        <p>
+            Other opportunities on a part-time and/or contract basis: Graphic designer, video editing and production, accounting. We have opportunities for CxO level positions with co-founder / startup equity compensation possible.
+        </p>
+   
+        <p>
+            For interest in all positions, please contact our CEO, <a href="mailto:patrick@veritasu.com">patrick@veritasu.com</a>.
+        </p>
+   
+        <p>
+            <em>We are looking for talented people willing to work hard, have fun at it, and help us succeed. Join us!</em>
+        </p>
+    </div>
+</div>

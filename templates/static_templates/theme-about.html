@@ -1,5 +1,20 @@
 ## mako
+<%! from django.core.urlresolvers import reverse %>
+<%! from django.utils.translation import ugettext as _ %>
 
 <%inherit file="../main.html" />
+<%namespace name='static' file='/static_content.html'/>
 
-Hello World
+<%block name="pagetitle">${_("About")}</%block>
+
+<div class="container">
+    <div class="col-sm-8 col-sm-offset-2">
+        <h1>About VeritasU</h1>
+        <p>
+            At VeritasU, we are technology experts, serving educators, committed to improving education and learning. VeritasU supports hosted platforms for online and blended learning. We provide hosting, course development and customization, and delivery support for MOOCs and online courses. We leverage and support open-EdX, the leading open source online learning platform.
+        </p>
+        <p>
+            We are a small, global, distributed team led out of Austin, Texas. Our team spans several continents and time zones, but we have a singular purpose:  Improving education through better technology.
+        </p>
+    </div>
+</div>

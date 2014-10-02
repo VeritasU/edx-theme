@@ -7,14 +7,28 @@
 <header id="header" class="global">
     <div class="container">
         <span>
-            <img src="${static.url('themes/veritasu/images/veritas-logo-small.png')}" class="header-logo-img">
+            <img src="${static.url('themes/veritasu/images/Veritas_U_Logo_Shield.png')}" class="header-logo-img">
             <a href="/">
                 <img src="${static.url('themes/veritasu/images/VeritasU_RedNameOnlySmall.png')}" class="header-logo-text">
             </a>
         </span>
-        <a class="btn btn-link" href="/courses">Courses</a>
-        <a class="btn btn-link" href="/features">Features</a>
-        <a class="btn btn-link" href="/about">About</a>
-        <a class="btn btn-link" href="http://blog.veritasu.com">Blog</a>
+        <div class="pull-right">
+            <a id="courses-nav-button" class="btn btn-link" href="/courses">Courses</a>
+            <a id="features-nav-button" class="btn btn-link" href="/features">Features</a>
+            <div class="btn-group">
+                <a type="button" id = "about-nav-button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+                About <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="/tos">Terms of Service</a></li>
+                    <li><a href="/jobs">Careers</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-link" href="http://blog.veritasu.com">Blog</a>
+            <a href="/register" class="btn btn-default login-btn">Sign Up</a>
+            <a href="/login" class="btn btn-success login-btn">Login</a>
+        </div>
     </div>
 </header>

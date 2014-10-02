@@ -1,19 +1,27 @@
 ## mako
 <%! from django.core.urlresolvers import reverse %>
+<%! from django.utils.translation import ugettext as _ %>
+
 <%inherit file="../main.html" />
 <%namespace name='static' file='/static_content.html'/>
+
+<%block name="pagetitle">${_("Features")}</%block>
 
 <div class="container">
     <div class="row feature-row" id="veritasU">
         <div class="col-md-6">
-            <p> 
-                HELLO WORLD
+            <h2>VeritasU</h2>
+            <p>
+                VeritasU helps educators and institutions implement and deliver online courses. Our cloud-hosted solution doesn’t require custom software installation and our 24/7 support frees you from dedicated IT staff.  Why use us?
             </p>
-            <ul>
-                <li>You focus on teaching</li>
-                <li>We take care of all that grungy IT and tech stuff.</li>
-            </ul>
-            <p>VeritasU is proud to use OpenEdX, the leading open source learning platform.
+            <p>
+                <ul>
+                    <li>You focus on teaching</li>
+                    <li>We take care of all that grungy IT and tech stuff.</li>
+                </ul>
+            </p>
+            <p>
+                VeritasU is proud to use OpenEdX, the leading open source learning platform.
             </p>
         </div>
         <div class="col-md-6">
@@ -22,13 +30,14 @@
             </div>
         </div>
         <div class="col-md-12 text-center sign-up-row">
-            <a href="/signup" class="btn btn-warning btn-lg">Sign Up</a>
+            <a href="/register" class="btn btn-warning btn-lg">Sign Up</a>
         </div>
     </div>
     <div class="row feature-row" id="openEdx">
         <div class="col-md-6">
             <h2>About OpenEdX</h2>
-            <p>Open-EdX is an open-source learning platform. OpenEdX is the technology behind EdX, the higher-ed consortium formed by MIT and Harvard (with Google, Stanford and other institutions on board), developed for serving MOOCs, massive open online courses. The open-source Open-EdX technology to fulfill their mission to make quality courses available to the world. We are proud to work with openEdX to make that mission a reality - working with our partner educators to create and deliver great courses.
+            <p>
+                Open-EdX is an open-source learning platform. OpenEdX is the technology behind EdX, the higher-ed consortium formed by MIT and Harvard (with Google, Stanford and other institutions on board), developed for serving MOOCs, massive open online courses. The open-source Open-EdX technology to fulfill their mission to make quality courses available to the world. We are proud to work with openEdX to make that mission a reality - working with our partner educators to create and deliver great courses.
             </p>
         </div>
         <div class="col-md-6">
@@ -37,7 +46,59 @@
             </div>
         </div>
         <div class="col-md-12 text-center sign-up-row">
-            <a href="/signup" class="btn btn-warning btn-lg">Sign Up</a>
+            <a href="/register" class="btn btn-warning btn-lg">Sign Up</a>
         </div>
     </div>
+    <div class="row feature-row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-5">
+                <div class="pricing pricing-basic panel panel-default">
+                    <div class="text-center panel-heading">
+                        <h3>Basic Course Plan</h3>
+                        <p>
+                            <em>"DIY Open-EdX course hosting"</em>
+                        </p>
+                    </div>
+                    <div class="panel-body">
+                        <p>Online course creation</p>
+                        <p>Hosted on VeritasU.com</p>
+                        <p>Online support</p>
+                        <hr>
+                        <p>
+                            <strike><strong>$199/mo per course</strong></strike>
+                        </p>
+                        <p>
+                            <strong>First course free</strong> 
+                        </p>
+                    </div>
+                    <div class="panel-footer text-center">
+                        <a href="/register" class="btn btn-warning btn-lg">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="pricing pricing-enterprise panel panel-default">
+                    <div class="text-center panel-heading">
+                        <h3>Premium Enterprise</h3>
+                        <p>
+                        <em>"Custom support for online course success"</em>
+                        </p>
+                    </div>
+                    <div class="panel-body">
+                        <p>Course creation and development support</p>
+                        <p>Managed hosting, VeritasU.com or your domain</p>
+                        <p>Scalable; no limits on courses and students</p>
+                        <p>Full support 24/7</p>
+                        <p>Custom add-on and plug-in development</p>
+                        <p>Pricing based on course support needs</p>
+                    </div>
+                    <div class="panel-footer text-center">
+                        <a href="/contact" class="btn btn-primary btn-lg">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
 </div>
