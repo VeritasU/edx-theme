@@ -11,31 +11,33 @@ Installation
 =======
 First, make sure to clone this directory into the `/themes` directory of your edx stack. Rename the directory `/themes/veritasu` if you haven't already
 
-Second, you'll want to edit the `urls.py` located in `/edx-platform/lms` to include references to our custom pages (for example, 'features' and 'signup')
+Second, edit the lms.env.json to include references to our custom pages (for example, 'features' and 'signup')
 
 ```
 ######################### MARKETING SITE ###############################
 ...
-MKTG_URL_LINK_MAP = {
-    'ABOUT': 'about_edx',
-    'CONTACT': 'contact',
-    'FAQ': 'help_edx',
-    'COURSES': 'courses',
-    'ROOT': 'root',
-    'TOS': 'tos',
-    'HONOR': 'honor',
-    'PRIVACY': 'privacy_edx',
-    'JOBS': 'jobs',
-    'NEWS': 'news',
-    'PRESS': 'press',
-    'BLOG': 'edx-blog',
-    'DONATE': 'donate',
-    'FEATURES' : 'features',
-    'SIGNUP' : 'signup',
+    "MKTG_URLS": {
+        "ABOUT": "about_edx",
+        "CONTACT": "contact",
+        "FAQ": "help_edx",
+        "COURSES": "courses",
+        "ROOT": "root",
+        "TOS": "tos",
+        "HONOR": "honor",
+        "PRIVACY": "privacy_edx",
+        "JOBS": "jobs",
+        "NEWS": "news",
+        "PRESS": "press",
+        "BLOG": "edx-blog",
+        "DONATE": "donate",
+        "FEATURES" : "features",
+        "SIGNUP" : "signup"
+    } 
+
 ...
 ```
 
-Finally, on the devstack, once you have your vagant instance up and running, you'll want to edit `/lms.envs.json` according to the instructions here: https://github.com/Stanford-Online/edx-theme
+Finally, on the devstack, once you have your vagant instance up and running, you'll want to edit `lms.env.json` according to the instructions here: https://github.com/Stanford-Online/edx-theme
 
 
 License
