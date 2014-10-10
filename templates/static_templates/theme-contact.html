@@ -8,5 +8,32 @@
 <%block name="pagetitle">${_("Contact")}</%block>
 
 <div class="container">
-    <p>Contact VeritasU</p>
+	<div class="row">
+	<div class="col-md-6" id ="contact-page">
+		<h2>Contact Us</h2>
+		<p> </p>
+		<p>We can be reached at support@veritasu.com or through this form:</p>
+	   <form role="form">
+		 <label for="InputName">Your Name</label>  
+		 <div class="form-group">
+		  	<input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+		 </div>		
+		 <label for="InputName">Institution</label>  
+		 <div class="form-group">
+		  	<input type="text" class="form-control" name="InputName" id="InputName" placeholder="Institution">
+		 </div>  
+	     <div class="form-group">
+	       <label for="exampleInputEmail1">Email address</label>
+	       <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required>
+	     </div>
+     	<div class="form-group">
+        	<label for="InputMessage">Comment or Request</label>
+        	
+          	  <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5"></textarea>
+		 
+		</div>
+	     <button type="submit" class="btn btn-default">Submit</button>
+	   </form>
+   </div>
+	</div>
 </div>

@@ -12,7 +12,7 @@
 h1, h2, h3, h4, h5 {
     font-family: 'Noto Sans', sans-serif !important;
     text-transform: none !important;
-    font-weight: 700 !important;
+    font-weight: 300 !important;
     letter-spacing: 0px !important;
 }
 
@@ -123,6 +123,8 @@ button {
 .feature-row {
     padding-top: 40px;
     padding-bottom: 100px;
+    padding-right: 50px;
+    text-align: left;
     font-family: 'Open Sans', sans-serif !important;
 }
 
@@ -226,6 +228,7 @@ button {
 
 #header .container {
     height: 100%;
+    padding-top:0;
 }
 
 .header-logo-img {
@@ -236,17 +239,25 @@ button {
     height: 20px;
 }
 
+/*Navbat */
+
+#navbar-right {
+	width:490px;
+	border: none;
+	float: right !important;
+	padding-left:0px !important;
+}
+
 /* The Footer */
 
 #footer {
-    background-color: #C3C1C1;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    color: #3c3c3c;
+    background-color: #126f9a;
+    color: #126f9a;
 }
 
 #footer > .container {
-    background-color: #C3C1C1;
+    background-color: #126f9a;
+
 }
 
 .social-stuff img {
@@ -263,7 +274,7 @@ button {
     color: #3c3c3c;
 }
 
-form input {
+#footer-newsletter {
     box-shadow: none;
     font-weight: 400 !important;
     font-family: 'Open Sans', sans-serif !important;
@@ -291,4 +302,11 @@ form {
 
 .row {
     padding-bottom: 20px;
+}
+/* Contact Page */
+
+#contact-page {
+	padding-top: 40px !important;
+	
+	
 }
