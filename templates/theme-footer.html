@@ -1,53 +1,41 @@
 ## mako
 <%! from django.core.urlresolvers import reverse %>
+
 <%namespace name='static' file='/static_content.html'/>
 <%! from datetime import datetime %>
 <%! from pytz import UTC %>
+<%! 
+  from django.core.urlresolvers import reverse
+  from django.utils.translation import ugettext as _
+  from edxmako.shortcuts import marketing_link
+%>
 
-<div id="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 footer-links">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/courses">Courses</a></li>
-                    <li><a href="/features">Features</a></li>
-                    <li><a  href="/about">About</a></li>
-                    <li><a  href="/tos">Terms of Service</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4 footer-links">
-                <ul>
-                    <li><a  href="/blog">Blog</a></li>
-                    <li><a  href="/jobs">Careers</a></li>
-                    <li><a  href="/faq">FAQ</a></li>
-                    <li><a  href="/contact">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <p>Sign up for our newsletter</p>
-                <form class="form-inline">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="footer-newsletter" placeholder="Email Address">
-                    </div>
-                    <div class="form-group text-center">
-                        <button type="submit" class="btn btn-default">
-                            Sign Up
-                        </button>
-                    </div>
-                </form>
-                <p class="social-stuff">
-                    Follow Us On Twitter: 
-                    <a href="https://twitter.com/Veritas_U" target="_blank">
-                        <img src="/static/images/social/twitter-sharing.png">
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                &copy; 2014 VeritasU, All Rights Reserved
-            </div>
-        </div>
+<div class="wrapper-footer" id ="footer">
+  <footer>
+    <div class="colophon">
+      <nav class="nav-colophon">
+        <ol>
+      <li><a  href="/blog">Blog</a></li>
+      <li><a  href="/jobs">Careers</a></li>
+      <li><a  href="/faq">FAQ</a></li>
+      <li><a  href="/contact">Contact Us</a></li>
+      <li><a href="/features">Features</a></li>
+      <li><a  href="/about">About</a></li>
+      <li><a  href="/tos">Terms of Service</a></li>
+	    </ol>
+		
+      </nav>
     </div>
-</div>
+	    <div class="references">
+            <p class="social-stuff pull-right">
+                Follow Us On Twitter: 
+                <a href="https://twitter.com/Veritas_U" target="_blank">
+                    <img src="/static/images/social/twitter-sharing.png">
+                </a>
+            </p>
+	    </div>
+		
+	  </footer>
+	</div>
+
+		
