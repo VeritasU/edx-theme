@@ -9,13 +9,13 @@
 <section class="find-courses">
 
 <%
-  course_index_overlay_text = microsite.get_value('course_index_overlay_text', _("Veritasu Offers free online courses"))
+  course_index_overlay_text = microsite.get_value('course_index_overlay_text', _("Veritasu offers free online courses"))
 
   # not sure why this is, but if I use static.url('images/edx_bw.png') then the HTML rendering
   # of this template goes wonky
 
   logo_file = microsite.get_value(
-    'course_index_overlay_logo_file', settings.STATIC_URL + 'images/edx_bw.png')
+    'course_index_overlay_logo_file', settings.STATIC_URL + 'themes/veritasu/images/veritas-logo-small.png')
 %>
 
   <header class="search">
