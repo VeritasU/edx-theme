@@ -322,3 +322,9 @@ form {
 .course-info header.course-profile {
 	height: 400px !important;
 }
+
+
+.course-info header.course-profile .intro-inner-wrapper .media .hero img {
+	height: 160px;
+
+}
