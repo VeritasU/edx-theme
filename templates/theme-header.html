@@ -32,7 +32,19 @@
                 <a href="/login" class="btn btn-success login-btn">Login</a>
 	    %else:
                 <a class="btn btn-link" href="http://blog.veritasu.com">Blog</a>
-	        <a href="${reverse('logout')}" class="btn btn-success login-btn">Logout</a>
+				
+				<div class="btn-group">
+				  <button type="button" class="btn btn-primary"><strong>${user.username}</strong></button>
+				  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				    <span class="caret"></span>
+				    <span class="sr-only">Toggle Dropdown</span>
+				  </button>
+				  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+				    <li><a href="/courses">Courses</a></li>
+				    <li class="divider"></li>
+				    <li><a href="${reverse('logout')}">Logout</a></li>
+				  </ul>
+				</div>
 	   %endif
 	   
         </div>

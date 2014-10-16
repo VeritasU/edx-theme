@@ -311,6 +311,10 @@ form {
 .row {
     padding-bottom: 20px;
 }
+
+.wrapper-footer footer .colophon .nav-colophon li a{
+	color: #FFFFFF;
+}
 /* Contact Page */
 
 #contact-page {
@@ -324,7 +328,9 @@ form {
 }
 
 
+
 .course-info header.course-profile .intro-inner-wrapper .media .hero img {
 	height: 160px;
 
 }
+
