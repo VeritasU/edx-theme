@@ -24,6 +24,15 @@ h1, h2, h3, h4, h5 {
 	font-size: 14px;
 }
 
+h1 {
+	font-size: 27px !important;
+}
+
+h5 {
+	font-size: 22px !important;
+}
+
+
 /* Button tweaks */
 button {
     letter-spacing: 0px;
@@ -268,8 +277,9 @@ button {
 
 }
 
-.social-stuff img {
+.wrapper-footer footer.references p.social-stuff img {
     opacity: 0.5;
+    color: #FFFFFF;
 }
 
 .footer-links ul {
@@ -315,6 +325,8 @@ form {
 .wrapper-footer footer .colophon .nav-colophon li a{
 	color: #FFFFFF;
 }
+
+
 /* Contact Page */
 
 #contact-page {
@@ -332,5 +344,17 @@ form {
 .course-info header.course-profile .intro-inner-wrapper .media .hero img {
 	height: 160px;
 
+}
+#social {
+    
+    color: #FFFFFF !important;
+}
+
+#password_reset_complete {
+	bottom:270px !important;
+}
+
+#password-reset-email{
+	color: black;
 }
 
