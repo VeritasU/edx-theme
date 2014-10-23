@@ -350,11 +350,17 @@ form {
     color: #FFFFFF !important;
 }
 
+
 #password_reset_complete {
-	bottom:270px !important;
+	max-height:260px !important;
 }
+
 
 #password-reset-email{
 	color: black;
+}
+
+#forgot-password-modal {
+	max-height:400px !important;
 }
 
