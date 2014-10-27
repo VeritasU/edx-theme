@@ -364,3 +364,11 @@ form {
 	max-height:340px !important;
 }
 
+.vertical-center {
+  min-height: 65%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 65vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
