@@ -1,0 +1,17 @@
+## mako
+<%! from django.core.urlresolvers import reverse %>
+<%! from django.utils.translation import ugettext as _ %>
+
+<%inherit file="../main.html" />
+<%namespace name='static' file='/static_content.html'/>
+
+<%block name="pagetitle">${_("Contact")}</%block>
+
+<div class="container">
+	<div class="row vertical-center">
+		<div class="col-md-6" >
+  	  	<p>${_("Thank you for your interest in Veritasu.")}</p>
+  		<p>${_(" We will get back to you shortly.")}</p>
+	</div>
+	</div>
+</div>
