@@ -352,7 +352,7 @@ form {
 
 
 #password_reset_complete {
-	max-height:260px !important;
+	max-height:252px !important;
 }
 
 
@@ -361,6 +361,6 @@ form {
 }
 
 #forgot-password-modal {
-	max-height:400px !important;
+	max-height:340px !important;
 }
 
